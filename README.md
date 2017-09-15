@@ -1,4 +1,4 @@
-# vapor-redis-performance
+# swift-redis-client-benchmarks
 
 A benchmark for vapor/redis, IBM-Swift/Kitura-redis and PerfectlySoft/PerfectRedis based on https://github.com/stefanwille/redis-client-benchmarks
 
