@@ -1,6 +1,6 @@
 # vapor-redis-performance
 
-A benchmark for vapor/redis based on https://github.com/stefanwille/redis-client-benchmarks
+A benchmark for vapor/redis, IBM-Swift/Kitura-redis and PerfectlySoft/PerfectRedis based on https://github.com/stefanwille/redis-client-benchmarks
 
 ## My Result
 
@@ -26,10 +26,24 @@ Redis server v=3.2.9 sha=00000000:0 malloc=libc bits=64 build=d97708fd9e007be7
 #### vapor/redis v2.0.0
 
 ```
-$ swift build -c release
-$ ./vapor-redis-performance
 $ ./.build/release/vapor-redis-performance
 Elapsed time: 10.6762710213661, throughput: 93665.6626643074 commands/sec
+Done
+```
+
+#### IBM-Swift/Kitura-redis v1.8.0
+
+```
+$ ./.build/x86_64-apple-macosx10.10/release/kitura-redis-performance
+Elapsed time: 53.8855229616165, throughput: 18557.8601642656 commands/sec
+Done
+```
+
+#### PerfectlySoft/Perfect-Redis v2.0.3
+
+```
+$ ./.build/x86_64-apple-macosx10.10/release/perfect-redis-performance
+Elapsed time: 49.3147420287132, throughput: 20277.9120170142 commands/sec
 Done
 ```
 
